@@ -1,1 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+:root {
+  --primary: #ff5757;
+  --secondary: #e34b1b;
+  --light: #ffffff;
+}
 
+body {
+  background-color: #f9f9f9;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.navbar{
+    height: 70px;
+}
+
+.margin-1{
+    margin-top: 50px;
+    
+}
+ul {
+  list-style: none;
+}
+
+ul li {
+  margin: 20px;
+}
+
+ol li {
+  margin: 10px;
+}
+
+ul li::before {
+  content: "\2022";
+  color: var(--primary);
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1.3em;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.btn-primary:hover {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+  transition: 0.3s;
+}
+
+.btn.btn-primary:active {
+  background-color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.btn-outline-primary {
+  background-color: var(--light);
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
+  transition: 0.3s;
+}
+
+.btn.btn-outline-primary:active {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+  color: var(--light);
+}
+
+.baseBlock {
+  cursor: pointer;
+  margin: 0px 0px 35px 0px;
+  padding: 0 0 15px 0px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: var(--light);
+  -moz-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.baseBlock:hover {
+  -webkit-transform: translate(0, -8px);
+  -moz-transform: translate(0, -8px);
+  -ms-transform: translate(0, -8px);
+  -o-transform: translate(0, -8px);
+  transform: translate(0, -8px);
+  box-shadow: 0 40px 40px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  margin-top: auto;
+  width: 100%;
+  padding: 5px;
+  background-color: var(--primary);
+  color: var(--light);
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+}
+
+/* loader */
+#loader {
+  height: 0;
+  width: 0;
+  padding: 15px;
+  border: 6px solid #ccc;
+  border-right-color: #888;
+  border-radius: 22px;
+  -webkit-animation: rotate 1s infinite linear;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+.heading-11 {
+    font-family: "Cookie";
+    
+ }
+ @media screen and (max-width: 600px) {
+.heading-11{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+ }
