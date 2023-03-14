@@ -219,8 +219,14 @@ async function intialMealData(data){
     const mealURL=`https://api.spoonacular.com/recipes/${data.id}?apiKey=a02399d93f914654a7bec3bc12eba59f&includeNutrition=false`
     const respMeal=await fetch(mealURL);
     const res= await respMeal.json();
-    generateHTML(res,data.id);
-  })
+    load.style.display = "block"
+        setTimeout(() => {
+            load.style.display = "None";
+            generateHTML(res);
+
+        }, 2000);
+      })
+
   
 }
 async function generateInitialMeal(){

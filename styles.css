@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #f9f9f9;
+  background-color: #000000;
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
@@ -14,7 +14,11 @@ body {
 }
 .navbar{
     height: 70px;
+   
+    text-align: center;
+    justify-content: center;
 }
+
 
 .margin-1{
     margin-top: 50px;
@@ -109,6 +113,12 @@ ul li::before {
 .footer p {
   margin: 0;
 }
+#submitBtn{
+  padding: 10px 60px;
+  font-size: 25px;
+  letter-spacing: 0.1rem;
+  border-radius: 5px solid black;
+}
 
 /* loader */
 #loader {
@@ -129,12 +139,18 @@ ul li::before {
     -webkit-transform: rotate(360deg);
   }
 }
-.heading-11 {
-    font-family: "Cookie";
-    
+
+ .container{
+  font-family: "Cookie";
+  text-align: center;
+  letter-spacing: 0.1rem;
  }
+ .heading{
+  font-family: "Cookie";
+ }
+
  @media screen and (max-width: 600px) {
-.heading-11{
+.navbar{
     display: flex;
     text-align: center;
     justify-content: center;
